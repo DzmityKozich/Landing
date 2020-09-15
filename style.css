@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+
+    /* width: 100vw; */
+    height: 100%;
+  }
+
 *{
     padding: 0;
     margin: 0;
@@ -9,11 +16,6 @@
     padding: 0;
     margin: 0;
 }
-
-body {
-    height: 100%;
-    margin: 0;
-  }
 
 a{
     text-decoration: none;
@@ -30,7 +32,8 @@ textarea::placeholder{
 /* Container */
 .container{
     width: 100%;
-    max-width: 1100px;
+    max-width: 1130px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -70,6 +73,32 @@ textarea::placeholder{
 .nav__item:hover{
     color: #ffffff;
     background-color: #643a79;
+}
+
+/* Burger */
+.burger{
+    display: none;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+}
+
+.burger::after,
+.burger::before{
+    display: block;
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.burger::after{
+    top: 12px;
+}
+
+.burger::before{
+    top: -12px;
 }
 
 /* Intro */
@@ -339,13 +368,12 @@ textarea::placeholder{
 .skills__inner{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: space-between;
 }
 
 .skills__item{
-    max-width: 25%;
-    margin: 80px auto 0;
-    justify-content: center;
+    width: 25%;
+    margin-top: 80px;
     text-align: center;
 }
 
@@ -367,7 +395,7 @@ textarea::placeholder{
 }
 
 .portfolio__item{
-    max-width: 50%;
+    width: 50%;
     text-align: center;
     margin-top: 64px;
 }
@@ -384,7 +412,7 @@ textarea::placeholder{
 }
 
 .portfolio__btn{
-    margin: 64px auto 0;
+    text-align: center;
 }
 
 /* Catigories */
@@ -422,7 +450,6 @@ textarea::placeholder{
 }
 
 .reviews__inner{
-    /* margin-top: 71px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -486,6 +513,7 @@ textarea::placeholder{
 }
 
 .get__inner{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -553,7 +581,7 @@ textarea::placeholder{
     margin-top: 60px;
 }
 
-/* Media */
+/* Footer */
 .media{
     width: 100%;
     height: 123px;
@@ -579,4 +607,347 @@ textarea::placeholder{
 
 .media__item:hover{
     color: #30b3e1;
+}
+
+.media__icons{
+    display: none;
+}
+
+/* @Media */
+@media (max-width: 1150px){
+
+    /* Portfolio */
+    .portfolio{
+        height: 100%;
+        padding-bottom: 100px;
+    }
+
+    .portfolio__item{
+        width: 100%;
+    }
+
+    /* Team */
+    .team{
+        height: 100%;
+        padding-bottom: 100px;
+    }
+
+    .team__item{
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 991px){
+
+    /* Intro */
+    .intro__title{
+        font-size: 35px;
+    }
+
+    /* Rubric */
+    .rubric__subtitle{
+        max-width: 600px;
+    }
+
+    /* Services */
+    .services{
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    .services__item{
+        margin-bottom: 80px;
+        max-width: 50%;
+    }
+
+    /* Skills */
+    .skills{
+        height: 100%;
+        padding-bottom: 100px;
+    }
+
+    .skills__item{
+        width: 50%;
+    }
+
+    /* Reviews */
+    .reviews{
+        height: 100%;
+        padding-bottom: 100px;
+    }
+
+    .reviews__item{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .reviews__content{
+        width: 40%;
+    }
+
+    /* Get */
+    .get__credential{
+        width: 650px;
+    }
+
+    .get__input{
+        width: 300px;
+    }
+
+    .get__textarea{
+        width: 650px;
+    }
+}
+
+@media (max-width: 769px){
+
+    /* Intro */
+    .intro{
+        height: 450px;
+    }
+
+    .intro__title{
+        font-size: 30px;
+        padding: 0 50px;
+    }
+
+    /* Get */
+    .get__credential{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .get__input{
+        width: 75%;
+        margin-top: 10px;
+    }
+
+    .get__message{
+        width: 75%;
+    }
+
+    .get__textarea{
+        width: 100%;
+    }
+
+    /* Nav */
+    .nav{
+        display: none;
+    }
+
+    /* Burger */
+    .burger{
+        display: inline-block;
+        width: 40px;
+        height: 4px;
+        background-color: #fff;
+    }
+}
+
+@media (max-width: 569px){
+
+    /* Intro */
+    .intro{
+        height: 400px;
+    }
+
+    .intro__title{
+        font-size: 24px;
+    }
+
+    /* Button */
+    .btn{
+        padding: 15px 25px;
+        font-size: 14px;
+        margin-top: 35px;
+    }
+
+    /* Rubric */
+    .rubric__title{
+        font-size: 25px;
+    }
+
+    .rubric__subtitle{
+        font-size: 14px;
+    }
+
+    .rubric__title::after{
+        margin: 15px auto;
+    }
+
+    /* Services */
+    .services{
+        padding: 0;
+    }
+
+    .services__item{
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .services__item img{
+        width: 100px;
+        margin-bottom: 25px;
+    }
+
+    .services__inner{
+        margin-top: 50px;
+    }
+
+    .services__title{
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .services__text{
+        font-size: 14px;
+    }
+
+    /* Team */
+    .team{
+        padding-bottom: 40px;
+    }
+
+    .team__item{
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+    .team__item img{
+        width: 120px;
+    }
+
+    .team__name{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .team__position{
+        margin-top: 5px;
+    }
+
+    .team__text{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .links{
+        margin-top: 20px;
+    }
+
+    /* Skills */
+    .skills{
+        padding-bottom: 40px;
+    }
+
+    .skills__item{
+        margin-top: 40px;
+    }
+
+    .skills__item img{
+        width: 120px;
+    }
+
+    /* Portfolio */
+    .portfolio{
+        padding-bottom: 40px;
+    }
+
+    .portfolio__inner{
+        margin-top: 15px;
+    }
+
+    .portfolio__item{
+        margin-top: 25px;
+    }
+
+    .potfolio__title{
+        margin-top: 10px;
+    }
+
+    .portfolio__item img{
+        max-width: 250px;
+    }
+
+    /* Get */
+    .get{
+        height: 680px;
+    }
+
+    .get__email{
+        width: 100%;
+    }
+
+    .get__credential{
+        margin-top: 35px;
+        width: 100%;
+    }
+
+    /* Reviews */
+    .reviews{
+        padding-bottom: 40px;
+    }
+
+    .reviews__item{
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-top: 35px;
+    }
+    .reviews__content{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* Footer */
+    .media{
+        height: 50px;
+    }
+
+    .media__inner{
+        display: none;
+    }
+
+    .media__icons{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .media__icon{
+        font-size: 24px;
+        color: #ffffff;
+    }
+
+    .media__icon:hover{
+        color: #30b3e1;
+    }
+
+    /* All */
+    .services,
+    .team,
+    .skills,
+    .portfolio,
+    .reviews,
+    .get{
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 321px){
+
+    /* Catigories */
+    .catigories{
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+
+    .catigories__item{
+        width: 35%;
+        text-align: center;
+        margin: 10px 10px;
+        padding: 10px 5px;
+    }
 }
