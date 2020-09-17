@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Landing</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Damion&family=Titillium+Web:ital,wght@1,200;0,300;0,400;0,600;0,700;1,600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Damion&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/7a6c896ff0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -29,9 +29,9 @@
                     <a href="#" class="nav__item">Contact</a>
                 </nav>
 
-                <div class="burger">
+                <button class="burger">
                     <span class="burger__item">Menu</span>
-                </div>
+                </button>
             </div> <!-- / .header__inner -->
         </div> <!-- / .container -->
     </header>
@@ -86,6 +86,7 @@
                     <div class="services__text">Et harum quidem rerum est et
                         expedita distinctio. Nam libero tempore.</div>
                 </div>
+
             </div> <!-- / .services__inner -->
         </div> <!-- / .container -->
     </div> <!-- / .services -->
@@ -344,11 +345,11 @@
             <div class="get__inner">
                 <div class="get__email">
                     <div class="get__credential">
-                        <input class="get__input" placeholder="Your Name*" type="text">
-                        <input class="get__input" placeholder="Your Email*" type="text">
+                        <input class="get__input get__form" placeholder="Your Name*" type="text">
+                        <input class="get__form get__input" placeholder="Your Email*" type="text">
                     </div>
                     <div class="get__message">
-                        <textarea class="get__textarea" placeholder="Your Message*"></textarea>
+                        <textarea class="get__form get__textarea" placeholder="Your Message*"></textarea>
                     </div>
                 </div>
 
@@ -361,23 +362,37 @@
     <div class="media">
         <div class="container">
             <div class="media__inner">
-                <div class="media__item">Facebok</div>
-                <div class="media__item">Twitter</div>
-                <div class="media__item">Google+</div>
-                <div class="media__item">LinkedIn</div>
-                <div class="media__item">Behance</div>
-                <div class="media__item">Dribble</div>
-                <div class="media__item">GitHub</div>
+                <div class="media__item">
+                    <a href="#">Facebok</a>
+                </div>
+                <div class="media__item">
+                    <a href="#">Twitter</a>
+                </div>
+                <div class="media__item">
+                    <a href="#">Google</a>
+                </div>
+                <div class="media__item">
+                    <a href="#">LinkedIn</a>
+                </div>
+                <div class="media__item">
+                    <a href="#">Behance</a>
+                </div>
+                <div class="media__item">
+                    <a href="#">Dribble</a>
+                </div>
+                <div class="media__item">
+                    <a href="#">GitHub</a>
+                </div>
             </div>
             
             <div class="media__icons">
-                <i class="media__icon fa fa-facebook" aria-hidden="true"></i>
-                <i class="media__icon fa fa-twitter" aria-hidden="true"></i>
-                <i class="media__icon fa fa-google-plus" aria-hidden="true"></i>
-                <i class="media__icon fa fa-linkedin" aria-hidden="true"></i>
-                <i class="media__icon fa fa-behance" aria-hidden="true"></i>
-                <i class="media__icon fa fa-dribbble" aria-hidden="true"></i>
-                <i class="media__icon fa fa-github" aria-hidden="true"></i>
+                <a href="#"><i class="media__icon fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="media__icon fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="media__icon fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="#"><i class="media__icon fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="media__icon fa fa-behance" aria-hidden="true"></i></a>
+                <a href="#"><i class="media__icon fa fa-dribbble" aria-hidden="true"></i></a>
+                <a href="#"><i class="media__icon fa fa-github" aria-hidden="true"></i></a>
             </div>
         </div>
     </div> <!-- / .media -->
